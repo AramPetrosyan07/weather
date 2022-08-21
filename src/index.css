@@ -1,13 +1,81 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@100&family=Dancing+Script:wght@600;700&family=Edu+NSW+ACT+Foundation&family=Gwendolyn&family=Kalam:wght@300&family=Lato&family=Montserrat:wght@500;600&family=Oooh+Baby&family=Oswald&family=Ovo&family=Poppins:wght@200&family=Quicksand:wght@300&family=Raleway:wght@100;300;500&family=Roboto:ital,wght@0,300;0,400;1,300&family=Staatliches&family=Work+Sans&display=swap');
+
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app{
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  font-family: 'Roboto sans-serif';
+  color: white;
+  transition-duration: .5s;
+  overflow: hidden;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  border-top: 1px solid rgba(255, 255, 255, 0.466);
+  border-left: 1px solid rgba(255, 255, 255, 0.623);
+  border-radius: 15px;
+  background: rgba(163, 163, 163, 0.3);
+  backdrop-filter: blur(1px);
+  overflow: hidden;
+  padding: 3px;
+}
+
+.search-input > input {
+  font-size: 25px;
+  width: 395px;
+  font-size: 40px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  color: white;
+  background: transparent;
+}
+
+
+
+
+/*  */
+.weather-container{
+  display: inline-block;
+  padding: 10px;
+  background: rgba(187, 187, 187, 0.555);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  position: absolute;
+  top: 58%;
+  left: 2%;
+}
+
+.top-part{
+  display: flex;
+
+}
+.top-part>h1{
+  font-size: 110px;
+}
+.condition-high-low{
+  margin-top: 20px;
+}
+.condition-high-low>h1{
+  font-size: 25px;
+}
+
+.contry{
+  font-size: 50px;
 }
